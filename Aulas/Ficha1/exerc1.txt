@@ -1,0 +1,34 @@
+Exerc1 apoio
+
+var1b db 0AD -> 173(10) -> 10101101(2) -> AD
+string db 'PATA',0 -> 50 41 54 41 00
+var1w dw 173 -> 00AD -> 2 bytes -> AD00
+var1dw dd 10101101b -> 00AD -> double word 4bytes -> AD 00 00 00
+var2w word -28  -> word = dw 2 byte -> 1110 0100(c2) -> E4 -> FFE4 ->E4FF 
+var3w sword -28 -> sword 1 bytes , 8 bits -> E4
+var2b byte -28  -> byte = dd 1 byte -> E4
+var3b sbyte -28  ->  8bits = 1byte -> E4
+var2dw dword -28 ->  dword = dd 4 bytes 32bits -> FF FF FF E4 -> E4 FF FF FF 
+var3dw sdword -28 -> 1 byte -> E4
+CharArray dw 3 dup (0CCh) -> CC 00 CC 00 CC 00
+Square byte 0, 1, 4,9,16 -> 00 01 04 09 10
+ThreeD db 2 dup (4 dup (2 dup (052h))) -> 52 52 52 52 52 52 52 52 52 52 52 52 52 52 52 52
+TwoD db 2 dup (2 dup (12h)) -> 12 12 12 12
+IntArray word 4 dup (0BCh) -> 2 bytes -> 00 BC 00 BC 00 BC 00 BC -> BC 00 BC 00 BC 00 BC 00
+var1f fword 65535 ->  6bytes -> FF FF 00 00 00 00 
+var1q qword 65534 ->  8 bytes > FE FF 00 00 00 00 00 00
+var1t tbyte 65533 ->  10 bytes -> FD FF 00 00 00 00 00 00 00 00 
+X REAL4 4.0 -> 2 bytes -> 40 80 00 00 -> 00 00 80 40
+Y REAL8 2.75e-2 -> este nao vamos ver nas aulas
+Z REAL10 4.875 -> este nao vamos ver nas aulas
+
+
+
+Quando o valor é negativo está em complemento de 2
+Nao esquecer que são colocadas nas memorias trocadas, por causa dos mais significativos
+
+
+
+Tentar estudar as cenas da segmentação
+
+
